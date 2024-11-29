@@ -46,7 +46,7 @@ while True:
 #save the info into the file
     with open(file_name, "a") as file:
         file.write(f"Full name: {full_name}\n")
-        file.write(f"Gender: {gender}")
+        file.write(f"Gender: {gender}\n")
         file.write(f"Address: {address}\n")
         file.write(f"Age: {age_input}\n")
         file.write(f"Birthday: {birthday}\n")
