@@ -1,16 +1,16 @@
 #create the file name where data will be stored
 file_name = "personal_info_collection.txt"
 
+print("Personal Information Collector")
+
 #make a loop to allow multiple entries
 while True:
 #prompt for user inputs
-
     full_name = input("Full name: ")
     address = input("Address: ")
     age = int(input("Age: "))
     birthday = (input("Birthday (MM/DD/YY): "))
     contact_number = int(input("Phone number: "))
-
 #save the info into the file
     with open(file_name, "a") as file:
         file.write(f"Full name: {full_name}\n")
@@ -19,6 +19,8 @@ while True:
         file.write(f"Birthday: {birthday}\n")
         file.write(f"Contact Number: {contact_number}\n")
         file.write("\n")
+
+    print("Information saved successfully!")
 #ask user if theres another input
     another_input = input("Do you want to add another person? (yes/no): ")
     if another_input != "yes":
