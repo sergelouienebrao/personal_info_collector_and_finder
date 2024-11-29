@@ -36,6 +36,13 @@ while True:
         else:
           print("Invalid input. Please enter a valid phone number that is exactly 11 digits.")
 
+    while True:
+        gender = input("Gender (Male/Female/Other): ").strip().capitalize()
+        if gender in ["Male", "Female", "Other"]:
+            break
+        else:
+            print("Invalid input. Please enter 'Male,' 'Female,' or 'Other'.")
+
 #save the info into the file
     with open(file_name, "a") as file:
         file.write(f"Full name: {full_name}\n")
@@ -43,6 +50,7 @@ while True:
         file.write(f"Age: {age_input}\n")
         file.write(f"Birthday: {birthday}\n")
         file.write(f"Contact Number: {contact_number}\n")
+        file.write(f"Gender: {gender}")
         file.write("\n")
 
     print("Information saved successfully!")
