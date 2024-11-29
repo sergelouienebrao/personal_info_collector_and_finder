@@ -18,6 +18,7 @@ while True:
         file.write(f"Age: {age}\n")
         file.write(f"Birthday: {birthday}\n")
         file.write(f"Contact Number: {contact_number}\n")
+        file.write("\n")
 #ask user if theres another input
     another_input = input("Do you want to add another person? (yes/no): ")
     if another_input != "yes":
