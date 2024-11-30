@@ -51,7 +51,7 @@ while True:
         file.write(f"Age: {age_input}\n")
         file.write(f"Birthday: {birthday}\n")
         file.write(f"Contact Number: {contact_number}\n")
-        file.write("\n")
+        file.write("-----\n") 
 
     print("Information saved successfully!")
 #ask user if theres another input
