@@ -17,6 +17,11 @@ while True:
     if not found:
         print(f"No information found for '{name_search}'.")
 
-#ask user for another search
+#ask user for another search 
+    another = input("Do you want to search another person? (yes/no): ")
+    if another != "yes":
+        print("Search finished, thank you!")
+        break
  
 
+ 
